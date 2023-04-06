@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var menuItems: [String] = [
         "Chicken Pesto Pizza",
         "Sushi",
         "BBQ Sandwich",
         "Chicken and Rice",
-        "Whipped Brie"
+        "Whipped Brie",
+        "Caesar Salad"
     ]
+    
     var body: some View {
         NavigationStack {
             List(menuItems, id: \.self) { menuItem in

@@ -13,7 +13,8 @@ struct ContentView: View {
         "Chicken Pesto Pizza",
         "Sushi",
         "BBQ Sandwich",
-        "Chicken and Rice"
+        "Chicken and Rice",
+        "Whipped Brie"
     ]
     var body: some View {
         NavigationStack {

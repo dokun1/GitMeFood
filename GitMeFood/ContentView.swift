@@ -14,7 +14,7 @@ struct ContentView: View {
         "BBQ Sandwich",
         "Chicken and Rice",
         "Whipped Brie",
-        "Caesar Salad"
+        "Caesar Salad w/o Anchovies"
     ]
     
     var body: some View {

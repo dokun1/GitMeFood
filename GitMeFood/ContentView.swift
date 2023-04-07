@@ -43,8 +43,10 @@ struct ContentView: View {
                     ForEach(drinkItems, id: \.self) { drink in
                         Label(drink, systemImage: "mug")
                     }.onMove { indexSet, newIndex in
+                        #warning("TODO: Add logic for moving items")
                         print("moved item in \(indexSet) to \(newIndex)")
                     }.onDelete { indexSet in
+                        #warning("TODO: Add logic for deleting items")
                         print("deleted item in \(indexSet)")
                         
                     }

@@ -32,8 +32,10 @@ struct ContentView: View {
                     ForEach(foodItems, id: \.self) { food in
                         Label(food, systemImage: "fork.knife.circle")
                     }.onMove { indexSet, newIndex in
+                        #warning("TODO: Add logic for moving items")
                         print("moved item in \(indexSet) to \(newIndex)")
                     }.onDelete { indexSet in
+                        #warning("TODO: Add logic for deleting items")
                         print("deleted item in \(indexSet)")
                     }
                 }
@@ -44,9 +46,13 @@ struct ContentView: View {
                         print("moved item in \(indexSet) to \(newIndex)")
                     }.onDelete { indexSet in
                         print("deleted item in \(indexSet)")
+                        
                     }
                 }
+            }.toolbar {
+                EditButton()
             }.navigationTitle("Tasty Menu Items")
+                
         }
     }
 }

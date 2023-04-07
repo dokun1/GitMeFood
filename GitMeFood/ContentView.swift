@@ -46,10 +46,7 @@ struct ContentView: View {
                         print("deleted item in \(indexSet)")
                     }
                 }
-            }.toolbar {
-                EditButton()
             }.navigationTitle("Tasty Menu Items")
-            
         }
     }
 }
